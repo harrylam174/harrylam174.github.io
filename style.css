@@ -331,7 +331,7 @@ section+section {
 
 .project-image {
     width: 90%;
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
     margin-top: 1rem;
     border: 1px solid #ccc;
