@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Lam – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="https://i0.wp.com/linkedinheaders.com/wp-content/uploads/2018/02/toronto-header.jpg?fit=1584%2C396&ssl=1"
+            alt="Website Banner">
+    </div>
+
+    <header class="header-flex">
+        <div class="profile-picture">
+            <img src="./IMG_3907.jpeg" alt="Profile Picture">
+        </div>
+        <div class="intro">
+            <h1>Harry Lam</h1>
+            <p class="tagline">Full Stack Developer • GCP • AI + Web Enthusiast</p>
+            <p class="bio"></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/harrylam174/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/harrylam174"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Harry, a full-stack developer with a love for building intuitive, impactful tools.
+            Whether it's creating chatbots for real-world scheduling or experimenting with rhythm game data,
+            I enjoy blending creativity and engineering. Outside of work, you'll probably find me charting tracks in
+            Quaver or testing the limits of what Dialogflow CX can do.</p>
+    </section>
+
+    <section id="project-skill-container">
+        <div id="project-column">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Scientific Calculator</h3>
+                    <p>Nov 2024 - Present</p>
+                    <p>A small coding project that I did a while back. A simple basic calculator that can perform basic
+                        arithmetic,
+                        finding roots and trigonometry.</p>
+                    <a href="https://github.com/harrylam174/Calculator">View Project</a>
+                    <pre class="code-snippet">
+                        <code class="language-cpp">
+<span class="comment"># calculator.h preview</span>
+<span class="comment"># Trigonometric functions (sin, cos, tan)</span>
+
+<span class="keyword">static double</span> sine(<span class="keyword">double</span> x);
+<span class="keyword">static double</span> cosine(<span class="keyword">double</span> x);
+<span class="keyword">static double</span> tan(<span class="keyword">double</span> x);</code></pre>
+                </div>
+                <div class="project">
+                    <h3>AI Travel Advisor</h3>
+                    <p>April 2023 - August 2023</p>
+                    <p>An interesting co-op project that I did during my 1st year of university. Creating a reliable AI
+                        travel advisor for disabled people.</p>
+                    <a href="/ai-travel-advisor">View Project</a>
+                    <img src="https://cdn.aarp.net/content/dam/aarp/home-and-family/personal-technology/2023/06/1140-ai-travel-chatbot.png" alt="AI travel advisor" class="project-image">
+                </div>
+            </section>
+        </div>
+        <div id="skill-column">
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript / TypeScript</li>
+                    <li>Python</li>
+                    <li>Node.js, Express</li>
+                    <li>React</li>
+                    <li>Dialogflow CX</li>
+                    <li>Google Cloud Platform</li>
+                    <li>SQL / Firestore</li>
+                </ul>
+            </section>
+            <section id="certificate">
+                <h2>Certificate</h2>
+                <ul>
+                    <li><a href="https://www.credly.com/badges/16419fd2-8f67-4877-a280-df2a21092bb7/linked_in?t=rwcvmp">AZ-900: Azure Fundamentals</a></li>
+                    <li><a href="https://www.credly.com/badges/0cf0cd39-6468-44e4-8fd9-30098aefa44c/linked_in?t=rx2lov">AI-900: Azure AI Fundamentals</a></li>
+                    <li>Emergency First Aid & CPR-C</li>
+                </ul>
+            </section>
+            
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Research & Development Intern – K-SynnerX</h3>
+            <p>June 2025 – Present</p>
+            <ul>
+                <li>Deployed a virtual assistant that allow user to manage appointments and availability</li>
+                <li>Tool used: Dialogflow CX, Google Cloud, Void IDE</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobby">
+            <div>
+                <h3>Rhythm Games</h3>
+                <ul>
+                    <li>VOEZ, Cytus II, Phigros, Rizline, Paradigm:Reboot, etc.</li>
+                    <li>Charter for Quaver</li>
+                    <li>Rating: 15.92 (Phigros), 303.60 (Quaver)</li>
+                </ul>
+            </div>
+            <div id="hobby-image">
+                <img src="./rhythmgame.png" alt="Hobby Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="journey">
+        <h2>My Journey</h2>
+        <ul class="timeline">
+            <li><strong>2023:</strong> Created an AI travel advisor for accessibility — co-op experience and real-world
+                impact!</li>
+            <li><strong>2024:</strong> Dove into cloud and voice tech; launched a voice-activated calendar assistant.
+            </li>
+            <li><strong>Always:</strong> Living for rhythm games, clean code, and a good UX.</li>
+        </ul>
+    </section>
+
+    <section id="stats">
+        <h2>Fun Stats</h2>
+        <ul>
+            <li>⌨️ 10,000+ lines of JavaScript written (probably)</li>
+            <li>🎵 303.60 Quaver rating (top 0.1%)</li>
+            <li>🧠 Trained a Dialogflow agent to be (almost) as helpful as me</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out at <a href="mailto:harry.lam174@gmail.com">harry.lam174@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Harry Lam</p>
+    </footer>
+</body>
+
+</html>
