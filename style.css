@@ -83,8 +83,8 @@ a:hover {
 #project-skill-container {
     display: flex;
     gap: 2rem;
-    margin-top: 3rem;
     flex-wrap: wrap;
+    margin-top: 0px;
 }
 
 #project-column {
@@ -92,10 +92,13 @@ a:hover {
     min-width: 300px;
 }
 
+#projects {
+    margin-top: 0px;
+}
+
 #skill-column {
     flex: 1;
     min-width: 200px;
-    margin-top: 20px;
     list-style-type: square;
     margin-bottom: 0rem;
 }
@@ -146,8 +149,8 @@ body p {
 
 #hobby-image {
     margin-top: 10px;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     margin-left: auto;
 }
 
@@ -232,6 +235,10 @@ body p {
         color: #e0e0e0;
     }
 
+    .section-divider {
+        background-color: #444;
+    }
+
     header,
     section,
     footer {
@@ -284,11 +291,11 @@ body p {
 }
 
 #about p {
-    max-width: 1000px
+    max-width: 1000px;
 }
 
 section+section {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .banner {
@@ -312,10 +319,6 @@ section+section {
     gap: 2rem;
     flex-wrap: wrap;
     margin-top: 2rem;
-}
-
-.intro {
-    flex: 1;
 }
 
 .tagline {
@@ -368,3 +371,11 @@ section+section {
 .code-snippet .keyword {
     color: #569cd6;
 }
+
+.section-divider {
+    border: none;
+    height: 4px;
+    background-color: #ccc;
+    margin: 2rem 0;
+  }
+  
