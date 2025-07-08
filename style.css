@@ -6,7 +6,7 @@ body {
     margin: auto;
     line-height: 1.6;
     background-color: white;
-    color: #222;
+    color: #121212;
     font-size: 15px;
 }
 
@@ -97,18 +97,33 @@ a:hover {
 }
 
 #projects {
-    margin-top: 0px;
+    margin: 0px;
 }
 
 #skill-column {
     flex: 1;
     min-width: 200px;
-    list-style-type: square;
+    list-style-type: none;
     margin-bottom: 0rem;
 }
 
+#skills {
+    margin-top: 0px;
+}
+
+#skill-column li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 #skills ul, #certificate ul {
-    list-style-type: square;
+    list-style-type: none;
     padding-left: 20px;
 }
 
@@ -116,11 +131,9 @@ a:hover {
     margin-bottom: 0rem;
 }
 
-
-
 .project,
 .job {
-    margin: 1.5rem 0;
+    margin: 0;
 }
 
 .project ul, .job ul {
@@ -235,16 +248,17 @@ body p {
     body p {
         max-width: 100%;
     }
+
+    body .school-img {
+        max-width: 450px;
+        margin-top: 20px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212;
         color: #e0e0e0;
-    }
-
-    .section-divider {
-        background-color: #444;
     }
 
     header,
@@ -385,14 +399,49 @@ section+section {
     color: #569cd6;
 }
 
-.section-divider {
-    border: none;
-    height: 4px;
-    background-color: #ccc;
-    margin: 2rem 0;
-  }
-
 .certificate-image {
     margin-top: 1rem;
     max-width: 250px
+}
+
+.school-img {
+    max-width: 500px;
+    height: 285px;
+    margin-top: 20px;
+}
+
+.skill-py::before {
+    background-image: url("https://www.svgrepo.com/show/452091/python.svg");
+}
+
+.skill-js::before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png")
+}
+
+.skill-node::before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png")
+}
+
+.skill-react::before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png")
+}
+
+.skill-dialogflow::before {
+    background-image: url("https://www.svgrepo.com/show/375425/dialogflow-cx.svg")
+}
+
+.skill-google::before {
+    background-image: url("./gcloud_logo.png");
+}
+
+.skill-sql::before {
+    background-image: url("https://www.svgrepo.com/show/375433/firestore.svg")
+}
+
+#certificate .azure::before {
+    background-image: url("https://swimburger.net/media/ppnn3pcl/azure.png")
+}
+
+#certificate .firstaid::before {
+    background-image: url("https://e7.pngegg.com/pngimages/843/160/png-clipart-canadian-red-cross-american-red-cross-international-red-cross-and-red-crescent-movement-organization-volunteering-croix-rouge-text-logo-thumbnail.png")
 }
