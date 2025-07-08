@@ -250,7 +250,7 @@ body p {
     }
 
     body .school-img {
-        max-width: 450px;
+        max-width: 90%;
         margin-top: 20px;
     }
 }
